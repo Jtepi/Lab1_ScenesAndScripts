@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://boikhkcc6118f"]
+
+[ext_resource type="Texture2D" uid="uid://cai7k44qd7ucj" path="res://pngtree-jungle-tree-clipart-cartoon-tree-in-the-jungle-vector-png-image_6862611.png" id="1_vyn3a"]
+
+[node name="TreeScene" type="Node2D"]
+
+[node name="TreeSprite" type="Sprite2D" parent="."]
+position = Vector2(115.022, 326)
+scale = Vector2(1.21655, 1.85556)
+texture = ExtResource("1_vyn3a")

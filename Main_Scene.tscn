@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://2q53rv32iioj"]
+
+[ext_resource type="Texture2D" uid="uid://btbmh248vmky2" path="res://game-landscape-with-tropical-plants_105738-749 copy.jpg" id="1_iubil"]
+[ext_resource type="Texture2D" uid="uid://0ayv6cbv7hcg" path="res://Featured-Image8.png" id="2_yc87u"]
+[ext_resource type="Script" path="res://Player_Script.gd" id="3_pbxyg"]
+[ext_resource type="PackedScene" uid="uid://boikhkcc6118f" path="res://TreeScene.tscn" id="3_yls5g"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="BackgroundSprite" type="Sprite2D" parent="."]
+position = Vector2(594.5, 308)
+scale = Vector2(2.03355, 2.08403)
+texture = ExtResource("1_iubil")
+
+[node name="CharacterSprite" type="Sprite2D" parent="."]
+position = Vector2(585, 354)
+scale = Vector2(0.738333, 0.658)
+texture = ExtResource("2_yc87u")
+script = ExtResource("3_pbxyg")
+
+[node name="TreeScene" parent="." instance=ExtResource("3_yls5g")]
+position = Vector2(-113, -76)
+
+[node name="TreeScene2" parent="." instance=ExtResource("3_yls5g")]
+position = Vector2(732, -131)
+
+[node name="TreeScene3" parent="." instance=ExtResource("3_yls5g")]
+position = Vector2(987, -125)
